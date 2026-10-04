@@ -22,6 +22,7 @@ import RootLayout from "@/components/layout/RootLayout";
 import Hero from "@/components/sections/Hero";
 import Positioning from "@/components/sections/Positioning";
 import Work from "@/components/sections/Work";
+import WorkContinuedEntry from "@/components/sections/WorkContinuedEntry";
 import Process from "@/components/sections/Process";
 import About from "@/components/sections/About";
 import Contact from "@/components/sections/Contact";
@@ -30,6 +31,9 @@ import Footer from "@/components/sections/Footer";
 // Internal Case Study System
 import CaseStudyPage from "@/components/case-study/CaseStudyPage";
 import { caseStudies } from "@/data/caseStudies";
+
+// Secondary Work Collection
+import WorkContinuedPage from "@/components/work/WorkContinuedPage";
 
 function AppContent() {
   const { path } = useRouter();
@@ -48,6 +52,11 @@ function AppContent() {
     }
   }, [path]);
 
+  // Secondary Work Collection: /work/continued
+  if (path === "/work/continued") {
+    return <WorkContinuedPage />;
+  }
+
   // Dynamic Routes: /work/bombel, /work/ipso, /work/vanzscape, /work/meru-schools, /work/world-of-katty
   if (path.startsWith("/work/")) {
     const slug = path.replace("/work/", "").trim();
@@ -63,6 +72,7 @@ function AppContent() {
       <Hero />
       <Positioning />
       <Work />
+      <WorkContinuedEntry />
       <Process />
       <About />
       <Contact />

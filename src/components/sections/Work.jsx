@@ -93,7 +93,8 @@ export default function Work() {
         aria-label="Selected Projects"
         onMouseLeave={handleSectionMouseLeave}
         style={{
-          paddingBlock: "clamp(80px, 12vw, 160px)",
+          paddingTop: "clamp(80px, 12vw, 160px)",
+          paddingBottom: 0,
           borderTop: "1px solid var(--color-divider)",
           backgroundColor: "var(--color-white)",
           color: "var(--color-black)",
