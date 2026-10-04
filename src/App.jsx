@@ -1,6 +1,6 @@
 /**
  * App.jsx
- * Personal Digital Portfolio of ABHISHEK TEHITH KUMAR
+ * Personal Digital Portfolio of ABHISHEK TEJITH KUMAR
  *
  * Routing & Application Structure:
  *   - Route "/" -> Home Page (Hero, Positioning, Work, Process, About, Contact, Footer)

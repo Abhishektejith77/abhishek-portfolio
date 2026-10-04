@@ -1,7 +1,7 @@
 /**
  * Footer.jsx
  * Minimal, quiet closing bar aligned to 8-Point Grid.
- * Identity: ABHISHEK TEHITH KUMAR
+ * Identity: ABHISHEK TEJITH KUMAR
  */
 
 import { useCursor } from "@/context/CursorContext";
@@ -33,7 +33,7 @@ export default function Footer() {
       >
         <div>
           <span className="type-ui" style={{ color: "var(--color-black)", fontWeight: 600, letterSpacing: "-0.01em" }}>
-            ABHISHEK TEHITH KUMAR© 2026
+            ABHISHEK TEJITH KUMAR © 2026
           </span>
         </div>
 

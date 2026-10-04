@@ -4,7 +4,7 @@
  *
  * Requirements:
  * - Reuse existing portfolio footer
- * - Keep: ABHISHEK TEHITH KUMAR © 2026
+ * - Keep: ABHISHEK TEJITH KUMAR © 2026
  * - Keep: Back to top ↑
  */
 

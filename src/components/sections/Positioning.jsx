@@ -85,7 +85,7 @@ export default function Positioning() {
           >
             <div>
               <span className="type-ui" style={{ color: "var(--color-black)", fontWeight: 600, display: "block", marginBottom: "8px" }}>
-                BRAND &amp; VISUAL IDENTITY
+                Brand &amp; Visual Identity
               </span>
               <p className="type-body" style={{ margin: 0, opacity: 0.85 }}>
                 I build identities that give brands a clear point of view, from the first mark to the system that carries it forward.
@@ -94,7 +94,7 @@ export default function Positioning() {
 
             <div>
               <span className="type-ui" style={{ color: "var(--color-black)", fontWeight: 600, display: "block", marginBottom: "8px" }}>
-                UX &amp; DIGITAL EXPERIENCES
+                UX &amp; Digital Experiences
               </span>
               <p className="type-body" style={{ margin: 0, opacity: 0.85 }}>
                 I design digital experiences around real behaviour, not just screens, making them easier to understand, use and remember.

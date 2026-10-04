@@ -21,12 +21,12 @@ import { useCursor } from "@/context/CursorContext";
 
 const CONTACT_DETAILS = {
   email: "tejith26601@gmail.com",
-  instagramName: "abhishek_tejith_kumar",
+  instagramName: "Abhishek Tejith Kumar",
   instagramUrl: "https://instagram.com/abhishek_tejith_kumar",
-  behanceName: "Abhishek Tejith Kumar Pilli",
+  behanceName: "Abhishek Tejith Kumar",
   behanceUrl: "https://behance.net",
-  phone: "+91 630 5160 470",
-  phoneTel: "+916305160470",
+  phone: "+91 630 5164 703",
+  phoneTel: "+916305164703",
 };
 
 export default function Contact() {

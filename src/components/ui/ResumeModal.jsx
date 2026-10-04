@@ -1,7 +1,7 @@
 /**
  * ResumeModal.jsx
  *
- * Dedicated Minimal PDF Viewer for Abhishek Tehith Kumar's Resume:
+ * Dedicated Minimal PDF Viewer for Abhishek Tejith Kumar's Resume:
  * - Opens cleanly over the portfolio upon clicking RESUME in navbar
  * - Does NOT download directly
  * - Does NOT navigate away
@@ -76,7 +76,7 @@ export default function ResumeModal() {
       ref={overlayRef}
       role="dialog"
       aria-modal="true"
-      aria-label="Resume of Abhishek Tehith Kumar"
+      aria-label="Resume of Abhishek Tejith Kumar"
       onClick={closeResume}
       style={{
         position: "fixed",
@@ -131,7 +131,7 @@ export default function ResumeModal() {
                 color: "#000000",
               }}
             >
-              ABHISHEK TEHITH KUMAR©
+              ABHISHEK TEJITH KUMAR©
             </span>
             <span
               className="type-meta"
@@ -198,7 +198,7 @@ export default function ResumeModal() {
           <object
             data={RESUME_PDF_PATH}
             type="application/pdf"
-            title="Resume of Abhishek Tehith Kumar"
+            title="Resume of Abhishek Tejith Kumar"
             style={{
               width: "100%",
               height: "100%",
@@ -208,7 +208,7 @@ export default function ResumeModal() {
           >
             <iframe
               src={RESUME_PDF_PATH}
-              title="Resume of Abhishek Tehith Kumar"
+              title="Resume of Abhishek Tejith Kumar"
               style={{
                 width: "100%",
                 height: "100%",

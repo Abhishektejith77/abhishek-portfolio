@@ -4,10 +4,10 @@
  * Strict Requirements (Section-Aware Dynamic Navbar + Mobile Responsiveness):
  * - Fixed position at top of viewport
  * - Desktop:
- *     - Left: ABHISHEK TEHITH KUMAR©
+ *     - Left: ABHISHEK TEJITH KUMAR©
  *     - Right: WORK · ABOUT · RESUME · CONTACT
  * - Mobile (<= 768px):
- *     - Left: ABHISHEK TEHITH KUMAR©
+ *     - Left: ABHISHEK TEJITH KUMAR©
  *     - Right: Minimal 2-line hamburger button (44px tap target)
  *     - Full-screen mobile navigation overlay (#F7FDFD background, #000000 text)
  *     - Editorial typography in Funnel Display (500–600 weight)
@@ -550,7 +550,7 @@ export default function Nav() {
         <a
           href="/"
           onClick={handleWordmarkClick}
-          aria-label="Abhishek Tehith Kumar Home"
+          aria-label="Abhishek Tejith Kumar Home"
           className="link-bare"
           style={{
             display: "inline-flex",
@@ -572,7 +572,7 @@ export default function Nav() {
               willChange: "color",
             }}
           >
-            ABHISHEK TEHITH KUMAR©
+            ABHISHEK TEJITH KUMAR©
           </span>
         </a>
 

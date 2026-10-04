@@ -1,7 +1,7 @@
-﻿# ABHISHEK TEHITH KUMAR — PORTFOLIO CONSTITUTION
+# ABHISHEK TEJITH KUMAR — PORTFOLIO CONSTITUTION
 
 ## Identity & Naming
-- Full Legal / Navbar Identity: `ABHISHEK TEHITH KUMAR`
+- Full Legal / Navbar Identity: `ABHISHEK TEJITH KUMAR`
 - Informal / Section / Body references: `ABHISHEK`
 - Never use `ABHI` as the main identity. Never alternate haphazardly.
 - Role: Visual Designer with strong UX background.

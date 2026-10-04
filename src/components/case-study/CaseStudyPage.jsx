@@ -31,12 +31,12 @@ export default function CaseStudyPage({ project }) {
   // Ensure title updates and scroll resets cleanly to top on entry
   useEffect(() => {
     if (project?.title) {
-      document.title = `${project.title} — Abhishek Tehith Kumar`;
+      document.title = `${project.title} — Abhishek Tejith Kumar`;
     }
     window.scrollTo(0, 0);
 
     return () => {
-      document.title = "Abhishek Tehith Kumar — Visual Designer";
+      document.title = "Abhishek Tejith Kumar — Visual Designer";
     };
   }, [project]);
 
