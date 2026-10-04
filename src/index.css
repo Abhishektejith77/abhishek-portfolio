@@ -1,0 +1,296 @@
+@import "tailwindcss";
+
+/* ═══════════════════════════════════════════════════════════════
+   ABHISHEK TEHITH KUMAR &copy; - STRICT DESIGN SYSTEM
+   Typography: FUNNEL DISPLAY ONLY (No other fonts)
+   Color: ABSOLUTE BLACK (#000000) & WHITE (#F7FDFD)
+   Spacing: 8-Point Grid System (8, 16, 24, 32, 40, 48, 56, 64, 80, 96, 128, 160)
+   ═══════════════════════════════════════════════════════════════ */
+
+:root {
+  /* ── Strict Binary Color System (Section 02) ── */
+  --color-white:      #F7FDFD;
+  --color-black:      #000000;
+
+  /* Shell defaults (Light) */
+  --color-bg:         #F7FDFD;
+  --color-fg:         #000000;
+  --color-divider:    rgba(0, 0, 0, 0.12);
+  --color-divider-subtle: rgba(0, 0, 0, 0.08);
+
+  /* Strict binary aliases for backwards & component compatibility */
+  --color-paper:      #F7FDFD;
+  --color-surface:    #F7FDFD;
+  --color-hairline:   rgba(0, 0, 0, 0.12);
+  --color-ink:        #000000;
+  --color-muted:      rgba(0, 0, 0, 0.60);
+  --color-accent:     #000000;
+  --font-primary:     var(--font-family);
+
+  /* ── 8-Point Spacing Foundations (Section 27) ── */
+  --space-8:          8px;
+  --space-16:         16px;
+  --space-24:         24px;
+  --space-32:         32px;
+  --space-40:         40px;
+  --space-48:         48px;
+  --space-56:         56px;
+  --space-64:         64px;
+  --space-80:         80px;
+  --space-96:         96px;
+  --space-128:        128px;
+  --space-160:        160px;
+
+  /* ── Pure Funnel Display Only (Section 01) ── */
+  --font-family:      "Funnel Display", sans-serif;
+
+  --max-w:            1480px;
+  --gutter:           clamp(20px, 5vw, 64px);
+  --nav-h:            64px;
+}
+
+@layer base {
+  *, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: auto;
+    overflow-x: hidden;
+    background-color: var(--color-white);
+    color: var(--color-black);
+    font-family: var(--font-family);
+  }
+
+  body {
+    background-color: var(--color-white);
+    color: var(--color-black);
+    font-family: var(--font-family);
+    font-weight: 400;
+    line-height: 1.55;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: var(--color-black);
+    color: var(--color-white);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer utilities {
+  .site-container {
+    width: 100%;
+    max-width: var(--max-w);
+    margin-inline: auto;
+    padding-inline: var(--gutter);
+  }
+
+  /* ── Typographic Hierarchy (All using Funnel Display) ── */
+
+  /* Level 01 — Hero / Primary Statement */
+  .type-display {
+    font-family: var(--font-family);
+    font-size: clamp(2rem, 4.2vw, 3.75rem);
+    font-weight: 600;
+    line-height: 1.08;
+    letter-spacing: -0.025em;
+    color: var(--color-black);
+  }
+
+  /* Level 02 — Section Heading */
+  .type-heading {
+    font-family: var(--font-family);
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    font-weight: 600;
+    line-height: 1.08;
+    letter-spacing: -0.025em;
+    color: var(--color-black);
+  }
+
+  /* Level 03 — Project Titles (Title Case, large anchor) */
+  .type-project {
+    font-family: var(--font-family);
+    font-size: clamp(2.4rem, 4.5vw, 3.85rem);
+    font-weight: 500;
+    line-height: 1.12;
+    letter-spacing: -0.02em;
+  }
+
+  /* Level 04 — Body (Sentence case, comfortable reading) */
+  .type-body {
+    font-family: var(--font-family);
+    font-size: clamp(0.95rem, 1.25vw, 1.05rem);
+    font-weight: 400;
+    line-height: 1.55;
+  }
+
+  .type-lead {
+    font-family: var(--font-family);
+    font-size: clamp(1.2rem, 2vw, 1.7rem);
+    font-weight: 500;
+    line-height: 1.48;
+    letter-spacing: -0.015em;
+  }
+
+  /* Level 05 — Metadata (Section 19: Sparse, Role / Type / Year) */
+  .type-meta {
+    font-family: var(--font-family);
+    font-size: 0.74rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    line-height: 1.3;
+  }
+
+  /* Level 06 — Navigation & Micro UI (Section 04/05) */
+  .type-ui {
+    font-family: var(--font-family);
+    font-size: 0.82rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    line-height: 1;
+  }
+
+  /* ── STRICT REFERENCE CTA BUTTON (Sections 14, 15, 16) ── */
+  /* Rectangular, 1px black border, #F7FDFD bg, #000000 text, 12px 24px padding, text always visible */
+  .btn-jump-project {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 24px;
+    border: 1px solid var(--color-black);
+    border-radius: 0px;
+    background-color: var(--color-white);
+    color: var(--color-black);
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-size: 0.88rem;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    cursor: pointer;
+    white-space: nowrap;
+    user-select: none;
+    transition: opacity 0.22s ease, border-color 0.22s ease, background-color 0.22s ease, color 0.22s ease;
+  }
+  .btn-jump-project span {
+    color: inherit;
+  }
+  .btn-jump-project:hover {
+    background-color: var(--color-black);
+    color: var(--color-white);
+  }
+  .btn-jump-project:hover span {
+    color: var(--color-white);
+  }
+
+  .btn-jump-project.inactive {
+    border-color: rgba(0, 0, 0, 0.24);
+    background-color: transparent;
+    color: rgba(0, 0, 0, 0.42);
+    opacity: 1;
+  }
+  .btn-jump-project.inactive span {
+    color: rgba(0, 0, 0, 0.42);
+  }
+  .btn-jump-project.inactive:hover {
+    border-color: var(--color-black);
+    color: var(--color-black);
+    background-color: var(--color-white);
+  }
+  .btn-jump-project.inactive:hover span {
+    color: var(--color-black);
+  }
+
+  /* Nav Contact CTA (Section 04) */
+  .nav-contact-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 16px;
+    border: 1px solid var(--color-black);
+    border-radius: 0px;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-size: 0.78rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .nav-contact-btn:hover {
+    background-color: transparent;
+    color: var(--color-black);
+  }
+
+  .nav-anchor {
+    position: relative;
+    color: inherit;
+    text-decoration: none;
+    padding-bottom: 2px;
+    font-weight: 500;
+  }
+  .nav-anchor::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--color-black);
+    transition: width 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .nav-anchor:hover::after {
+    width: 100%;
+  }
+
+  .link-bare {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  /* Section Anchor Offset (Avoid hiding underneath fixed navbar) */
+  section[id],
+  #intro,
+  #positioning,
+  #work,
+  #process,
+  #about,
+  #contact {
+    scroll-margin-top: calc(var(--nav-h) + 24px);
+  }
+
+  /* Responsive Navbar Visibility */
+  @media (max-width: 768px) {
+    .nav-desktop-links {
+      display: none !important;
+    }
+    .nav-mobile-toggle {
+      display: flex !important;
+    }
+  }
+
+  @media (min-width: 769px) {
+    .nav-desktop-links {
+      display: flex !important;
+    }
+    .nav-mobile-toggle {
+      display: none !important;
+    }
+  }
+}
